@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#08090c">
+<title>Closet FSA — Atlética</title>
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#inicio"><img src="assets/logo.png" alt="FSA"><span>CLOSET <b>FSA</b></span></a>
+  <nav><a href="#inicio">INÍCIO</a><a href="#como-funciona">COMO FUNCIONA</a><a href="#closet">CLOSET</a><a href="#comprar">COMPRAR</a></nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-copy">
+    <p class="eyebrow">ATLÉTICA FSA • ESTILO OFICIAL</p>
+    <h1>SEU LOOK.<br><span>SUA ATLÉTICA.</span></h1>
+    <p class="lead">Experimente as peças da FSA na sua própria foto. Escolha, ajuste e monte seu look antes de comprar.</p>
+    <a class="btn primary" href="#closet">ABRIR O CLOSET <span>→</span></a>
+  </div>
+  <div class="hero-card"><div class="glow"></div><div class="hero-mark">FSA</div><p>WEAR THE<br>COURSE.</p></div>
+</section>
+
+<section class="steps section" id="como-funciona">
+  <div class="section-head"><p class="eyebrow">COMO FUNCIONA</p><h2>MONTE EM <span>3 PASSOS.</span></h2></div>
+  <div class="step-grid">
+    <article><strong>01</strong><h3>SUA FOTO</h3><p>Envie uma foto sua. Não precisa ser de corpo inteiro.</p></article>
+    <article><strong>02</strong><h3>ESCOLHA A PEÇA</h3><p>Selecione camisetas, moletons ou jaquetas oficiais.</p></article>
+    <article><strong>03</strong><h3>AJUSTE O LOOK</h3><p>Arraste, aumente, diminua e gire a peça sobre sua foto.</p></article>
+  </div>
+</section>
+
+<section class="closet section" id="closet">
+  <div class="section-head"><p class="eyebrow">PROVADOR VIRTUAL</p><h2>SEU <span>CLOSET.</span></h2></div>
+  <div class="workbench">
+    <aside class="panel controls-panel">
+      <div class="control-box"><h3><i>01.</i> SUA FOTO</h3>
+        <label class="upload-area" for="photoInput" id="uploadArea"><span class="upload-icon">＋</span><b>ESCOLHER FOTO</b><small>JPG, PNG ou WEBP</small></label>
+        <input id="photoInput" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" hidden>
+        <p id="photoStatus" class="status">Nenhuma foto selecionada</p>
+      </div>
+      <div class="control-box"><h3><i>02.</i> CATEGORIA</h3><div class="tabs" role="tablist"><button class="tab active" data-category="camisetas">CAMISETAS</button><button class="tab" data-category="moletons">MOLETONS</button><button class="tab" data-category="jaquetas">JAQUETAS</button></div></div>
+      <div class="control-box"><h3><i>03.</i> PEÇAS</h3><div id="catalog" class="catalog"></div></div>
+    </aside>
+
+    <section class="panel fitting-panel">
+      <div class="fitting-top"><span>VISUALIZAÇÃO</span><button id="clearBtn" class="text-btn">LIMPAR ×</button></div>
+      <div id="viewer" class="viewer">
+        <div id="viewerMessage" class="empty-message"><span>FSA</span><b>ENVIE SUA FOTO</b><small>Seu look aparecerá aqui</small></div>
+        <img id="userPhoto" class="user-photo" alt="Sua foto">
+        <img id="clothingOverlay" class="clothing-overlay" alt="Peça selecionada" draggable="false">
+      </div>
+      <div class="fit-controls">
+        <button id="minusBtn">−</button><button id="resetBtn">RESET</button><button id="plusBtn">＋</button><button id="rotateBtn">↻</button>
+      </div>
+      <div id="selectedProduct" class="selected-product"><div><small>PEÇA SELECIONADA</small><strong id="selectedName">Nenhuma</strong></div><b id="selectedPrice">—</b></div>
+      <a id="buyBtn" class="btn primary buy" href="#comprar">QUERO ESSE LOOK <span>→</span></a>
+    </section>
+  </div>
+</section>
+
+<section class="buy-section section" id="comprar"><div><p class="eyebrow">PRONTO PARA O LOOK?</p><h2>VISTA A <span>FSA.</span></h2><p>Escolha sua peça no provador e fale com a Atlética para confirmar tamanho, disponibilidade e pedido.</p></div><a class="btn primary" href="#closet">VOLTAR AO CLOSET <span>↑</span></a></section>
+</main>
+<footer>© 2026 ATLÉTICA FSA <span>•</span> CLOSET OFICIAL</footer>
+<script src="script.js?v=3"></script>
+</body>
+</html>
